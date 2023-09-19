@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;// your code goes here
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    if(n>=2000)
+	    cout<<"yes\n";
+	    else
+	    cout<<"no\n";
+	    
+	}
+	return 0;
+}
