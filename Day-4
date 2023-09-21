@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    float l,v1,v2;
+	    float t11,t22;
+	    cin>>l>>v1>>v2;
+	    t11=l/v1;
+	    t22=l/v2;
+	    int t1=t11,t2=t22;
+	    if(t11>t1)
+	    	t1+=1;
+	    else 
+		t1=t1;
+		if(t22>t2)
+	    	t2+=1;
+	    else 
+		t2=t2;
+	    int total=t1-t2;
+	    if(total==1)
+	    	cout<<0<<endl;
+	    else if(t1==t2)
+	    	cout<<-1<<endl;
+	    else 
+	    	cout<<total-1<<endl;
+	    
+	}
+	return 0;
+}
